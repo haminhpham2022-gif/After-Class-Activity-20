@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Class Activity 20</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <input type="number" id="value1"> * <input type="number" id="value2"><br>
+    <p id="result"></p>
+    <button onclick="calc()">
+        Calculate
+    </button>
+    <script>
+        function calc(){
+            var number1=document.getElementById("value1").value;
+            var number2=document.getElementById("value2").value;
+            var result=number1*number2;
+            document.getElementById("result").innerHTML="= " + result;
+        }
+    </script>
+</body>
+</html>
